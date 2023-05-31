@@ -1,0 +1,224 @@
+/* Estilos generales */
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nova Mono', monospace;
+  color: rgb(93, 169, 182);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background: rgba(65, 65, 65, 0.8);
+  left: 0;
+  width: 100%;
+}
+
+.logo,
+.tituloWeb,
+.botones {
+  padding: 1rem;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 16px;
+}
+
+.tituloWeb {
+  justify-self: center;
+}
+
+.navbar-menu-lista {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-menu-lista li {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar-menu-lista a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(45, 45, 45, 0.9);
+  color: rgb(93, 169, 182);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-menu-lista a:hover {
+  background-color: rgba(65, 65, 65, 0.8);
+  color: rgb(93, 169, 182);
+}
+
+
+/* Estilos para el grid principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+      "grid-item-a grid-item-a grid-item-b grid-item-b"
+      "grid-item-a grid-item-a grid-item-b grid-item-b"
+      "grid-item-d grid-item-d grid-item-c grid-item-c"
+      "grid-item-d grid-item-d grid-item-c grid-item-c";
+  grid-gap: 20px;
+  background-image: url("../media/PomberoYaraBanner0.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8px;
+}
+
+.grid-item-a {
+  grid-area: grid-item-a;
+}
+
+.grid-item-b {
+  grid-area: grid-item-b;
+}
+
+.grid-item-c {
+  grid-area: grid-item-c;
+}
+
+.grid-item-d {
+  grid-area: grid-item-d;
+}
+
+.grid-item-a, .grid-item-b, .grid-item-c, .grid-item-d {
+  /* grid-column: 1 / 2; */
+  background: rgba(0, 0, 0, 0.65);
+  padding: 8px;
+
+}
+
+.grid-item-a img, .grid-item-b img, .grid-item-c img, .grid-item-d img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el bloque de equipo */
+.equipo-container {
+  background: rgba(65, 65, 65, 0.8);
+  padding: 20px;
+  background-image: url("../media/PomberoYaraBanner0.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  
+}
+
+ a {
+  color: white;
+}
+
+.equipo-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+/*   justify-items: center; */
+background: rgba(65, 65, 65, 0.8);
+padding: 1rem;
+}
+
+.equipo-grid-item img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.equipo-grid-item h3 {
+  margin: 10px 0 5px;
+}
+
+.equipo-grid-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.equipo-grid-item ul li {
+  margin-bottom: 5px;
+}
+
+.equipo-grid-item ul li a {
+  color: rgb(93, 169, 182);
+  text-decoration: none;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons i {
+  display: inline-block;
+  margin: 1rem;
+  color: white;
+  font-size: 20px;
+}
+
+
+.social-icon:hover {
+  color: rgb(93, 169, 182);
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .botones {
+    justify-content: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "grid-item-a"
+      "grid-item-b"
+      "grid-item-c"
+      "grid-item-d";
+    background-image: url("../media/PomberoYaraBanner0.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8px;
+  }
+
+  .grid-item-a,
+  .grid-item-b,
+  .grid-item-c,
+  .grid-item-d {
+    grid-column: 1 / 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  .equipo-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  /*   justify-items: center; */
+  }
+}
