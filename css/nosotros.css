@@ -48,7 +48,7 @@ padding: 1rem;
   display: block;
   margin: 0 auto;
   max-width: 60%;
-  height: auto;
+  height: auto; 
   border-radius: 50%;
 }
 .equipo-grid-item h3 {
