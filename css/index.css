@@ -1,0 +1,83 @@
+/* Estilos para el grid principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8px;
+}
+
+
+
+/* Estilos para el bloque de equipo */
+.equipo-container {
+  background: rgba(65, 65, 65, 0.8);
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+
+}
+
+a {
+  color: white;
+}
+
+.equipo-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+/*   justify-items: center; */  
+  background: rgba(65, 65, 65, 0.8);
+  padding: 1rem;
+
+}
+
+.equipo-grid-item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.equipo-grid-item h3 {
+  margin: 10px 0 5px;
+}
+
+.equipo-grid-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.equipo-grid-item ul li {
+  margin-bottom: 5px;
+}
+
+.equipo-grid-item ul li a {
+  color: rgb(93, 169, 182);
+  text-decoration: none;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8px;
+  }
+
+
+
+  .equipo-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    /*   justify-items: center; */
+  }
+}

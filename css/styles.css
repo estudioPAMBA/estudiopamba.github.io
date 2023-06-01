@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Nova Mono', monospace;
-  color: rgb(93, 169, 182);
+  color: rgb(212, 212, 212);
 }
 
 .navbar {
@@ -59,98 +59,6 @@ body {
 }
 
 
-/* Estilos para el grid principal */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-      "grid-item-a grid-item-a grid-item-b grid-item-b"
-      "grid-item-a grid-item-a grid-item-b grid-item-b"
-      "grid-item-d grid-item-d grid-item-c grid-item-c"
-      "grid-item-d grid-item-d grid-item-c grid-item-c";
-  grid-gap: 20px;
-  background-image: url("../media/PomberoYaraBanner0.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 8px;
-}
-
-.grid-item-a {
-  grid-area: grid-item-a;
-}
-
-.grid-item-b {
-  grid-area: grid-item-b;
-}
-
-.grid-item-c {
-  grid-area: grid-item-c;
-}
-
-.grid-item-d {
-  grid-area: grid-item-d;
-}
-
-.grid-item-a, .grid-item-b, .grid-item-c, .grid-item-d {
-  /* grid-column: 1 / 2; */
-  background: rgba(0, 0, 0, 0.65);
-  padding: 8px;
-
-}
-
-.grid-item-a img, .grid-item-b img, .grid-item-c img, .grid-item-d img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Estilos para el bloque de equipo */
-.equipo-container {
-  background: rgba(65, 65, 65, 0.8);
-  padding: 20px;
-  background-image: url("../media/PomberoYaraBanner0.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-attachment: fixed; */
-  
-}
-
- a {
-  color: white;
-}
-
-.equipo-grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-/*   justify-items: center; */
-background: rgba(65, 65, 65, 0.8);
-padding: 1rem;
-}
-
-.equipo-grid-item img {
-  max-width: 80px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.equipo-grid-item h3 {
-  margin: 10px 0 5px;
-}
-
-.equipo-grid-item ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.equipo-grid-item ul li {
-  margin-bottom: 5px;
-}
-
-.equipo-grid-item ul li a {
-  color: rgb(93, 169, 182);
-  text-decoration: none;
-}
 
 /* Estilos para el footer */
 footer {
@@ -191,34 +99,4 @@ footer {
     justify-content: center;
   }
 
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "grid-item-a"
-      "grid-item-b"
-      "grid-item-c"
-      "grid-item-d";
-    background-image: url("../media/PomberoYaraBanner0.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 8px;
-  }
-
-  .grid-item-a,
-  .grid-item-b,
-  .grid-item-c,
-  .grid-item-d {
-    grid-column: 1 / 2;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 8px;
-    max-width: 100%;
-  }
-
-  .equipo-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  /*   justify-items: center; */
-  }
 }
