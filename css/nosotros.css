@@ -34,12 +34,23 @@ background: rgba(65, 65, 65, 0.8);
 padding: 1rem;
 }
 
+.equipo-grid-item {
+  background-color: rgba(255, 255, 255, 0.007);
+  padding: 4px;
+}
+
+.equipo-grid-item:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+
+}
+
 .equipo-grid-item img {
-  max-width: 80px;
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
   height: auto;
   border-radius: 50%;
 }
-
 .equipo-grid-item h3 {
   margin: 10px 0 5px;
 }
@@ -73,8 +84,9 @@ padding: 1rem;
 
   .equipo-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   /*   justify-items: center; */
+  padding: 4px;
   }
 }
