@@ -27,7 +27,7 @@ a {
 
 .equipo-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 /*   justify-items: center; */  
   background: rgba(65, 65, 65, 0.8);
@@ -35,12 +35,25 @@ a {
 
 }
 
+.equipo-grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+/*   justify-items: center; */  
+  background: rgba(65, 65, 65, 0.8);
+  padding: 1rem;
+  justify-items: center;
+}
+
 .equipo-grid-item img {
   display: block;
   margin: 0 auto;
   max-width: 80px;
   height: auto;
-  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 8px 30%;
+  border-radius: 8px;
+  
 }
 
 .equipo-grid-item h3 {
