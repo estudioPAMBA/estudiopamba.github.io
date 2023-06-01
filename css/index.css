@@ -45,6 +45,10 @@ a {
   justify-items: center;
 }
 
+.equipo-grid-container2 img{
+  width: 50%;
+    }
+
 .equipo-grid-item img {
   display: block;
   margin: 0 auto;
@@ -92,5 +96,9 @@ a {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     /*   justify-items: center; */
+  }
+
+  .equipo-grid-container2 img{
+width: 100%;
   }
 }
