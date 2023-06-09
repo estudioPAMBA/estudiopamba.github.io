@@ -9,6 +9,8 @@ function abrirReproductor(event) {
     overlay.style.display = 'none';
   }
 
+  /* Esto es un experimento para hacer un block de notas */
+  
 document.addEventListener('DOMContentLoaded', function() {
     const noteForm = document.getElementById('note-form');
     const noteList = document.getElementById('note-list');
