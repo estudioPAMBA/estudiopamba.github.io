@@ -75,7 +75,7 @@ a {
 
 .reproductor-cerrar {
   position: absolute;
-  top: 10px;
+  top: 100px;
   right: 10px;
   color: white;
   font-size: 24px;
@@ -138,4 +138,10 @@ a {
     /*   justify-items: center; */
     padding: 4px;
   }
+
+  
+.reproductor-cerrar {
+  
+  top: 10px;
+}
 }
