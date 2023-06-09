@@ -44,6 +44,7 @@ padding: 1rem;
 
 }
 
+
 .equipo-grid-item img {
   display: block;
   margin: 0 auto;
@@ -68,6 +69,16 @@ padding: 1rem;
   color: rgb(93, 169, 182);
   text-decoration: none;
 }
+
+.equipo-grid-item p,
+.equipo-grid-item ul {
+  display: none;
+}
+.equipo-grid-item.mostrar p,
+.equipo-grid-item.mostrar ul {
+  display: block;
+}
+
 
 
 /* Media Queries */
