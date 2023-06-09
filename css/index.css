@@ -29,6 +29,7 @@ main {
 
 /* Estilos para el grid principal */
 .grid-container {
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -36,6 +37,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8px;
+
 }
 
 .intro {
@@ -67,11 +69,13 @@ main {
 /* Estilos para el bloque de equipo */
 .equipo-container {
   background: rgba(65, 65, 65, 0.8);
-  padding: 20px;
+  
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
-
+  max-width: 1000px;
+  margin: 0 auto;
+  
 
 }
 
@@ -151,7 +155,9 @@ a {
 
 /* Media Queries */
 @media (max-width: 768px) {
-
+.equipo-container {
+  max-width: 100%
+}
   .intro {
     grid-template-columns: repeat(1, 1fr);
   }
