@@ -1,3 +1,14 @@
+function abrirReproductor(event) {
+    event.preventDefault();
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'block';
+  }
+
+  function cerrarReproductor() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+  }
+
 document.addEventListener('DOMContentLoaded', function() {
     const noteForm = document.getElementById('note-form');
     const noteList = document.getElementById('note-list');
